@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai SP Residency | Comfortable Stay in Pollachi</title>
+    
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="Experience a comfortable, welcoming, and premium stay in Pollachi, Tamil Nadu at Sai SP Residency. Plan your stay and explore Pollachi with ease.">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Sai SP Residency | Comfortable Stay in Pollachi">
+    <meta property="og:description" content="Experience a comfortable, welcoming, and premium stay in Pollachi, Tamil Nadu at Sai SP Residency. Plan your stay and explore Pollachi with ease.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="Images/sp-residency.jpg">
+    
+    <!-- Google Fonts: Cormorant Garamond (Serif) & Plus Jakarta Sans (Sans-serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons via CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Top-level Navigation Bar -->
+    <header class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="#home" class="logo">
+                <span class="logo-main">SAI SP</span>
+                <span class="logo-sub">RESIDENCY</span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">HOME</a>
+                <a href="#about" class="nav-link">ABOUT</a>
+                <a href="#rooms" class="nav-link">ROOMS</a>
+                <a href="#facilities" class="nav-link">FACILITIES</a>
+                <a href="#gallery" class="nav-link">GALLERY</a>
+                <a href="#reviews" class="nav-link">REVIEWS</a>
+                <a href="#contact" class="nav-link">CONTACT</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <a href="#booking" class="btn btn-primary nav-cta">BOOK YOUR STAY</a>
+                <button class="hamburger-menu" id="hamburgerMenu" aria-label="Toggle Menu">
+                    <span class="bar bar-1"></span>
+                    <span class="bar bar-2"></span>
+                    <span class="bar bar-3"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-container">
+            <img src="Images/sp-residency.jpg" alt="Sai SP Residency Exterior" class="hero-bg-img" id="heroBgImg">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <span class="hero-eyebrow fade-up-init">WELCOME TO SAI SP RESIDENCY</span>
+            <h1 class="hero-title fade-up-init">Comfort. Convenience.<br>Your Stay in Pollachi.</h1>
+            <p class="hero-desc fade-up-init">Experience a comfortable and welcoming stay in Pollachi, designed for travellers seeking convenience and a pleasant place to stay.</p>
+            <div class="hero-actions fade-up-init">
+                <a href="#booking" class="btn btn-primary">BOOK YOUR STAY</a>
+                <a href="#rooms" class="btn btn-outline">EXPLORE ROOMS</a>
+            </div>
+        </div>
+        
+        <a href="#about" class="hero-scroll-indicator" aria-label="Scroll Down">
+            <span class="scroll-mouse"><span class="scroll-wheel"></span></span>
+            <span class="scroll-text">SCROLL TO EXPLORE</span>
+        </a>
+    </section>
+
+    <!-- Floating Booking Panel -->
+    <div class="booking-panel-container" id="booking">
+        <form class="booking-panel" id="bookingForm">
+            <div class="booking-field">
+                <label for="checkin"><i data-lucide="calendar"></i> CHECK-IN</label>
+                <input type="date" id="checkin" required>
+            </div>
+            <div class="booking-field">
+                <label for="checkout"><i data-lucide="calendar"></i> CHECK-OUT</label>
+                <input type="date" id="checkout" required>
+            </div>
+            <div class="booking-field">
+                <label for="guests"><i data-lucide="users"></i> GUESTS</label>
+                <select id="guests">
+                    <option value="1">1 Guest</option>
+                    <option value="2" selected>2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                    <option value="5+">5+ Guests</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-accent booking-submit-btn">CHECK AVAILABILITY</button>
+        </form>
+    </div>
+
+    <!-- About Section (Editorial Layout) -->
+    <section class="about section-padding" id="about">
+        <div class="container grid-two-cols">
+            <div class="about-image-wrapper reveal-slide-init" data-delay="100">
+                <img src="Images/38823741.webp" alt="Sai SP Residency Reception" class="about-image" loading="lazy">
+                <div class="image-accent-border"></div>
+            </div>
+            <div class="about-content fade-up-init" data-delay="300">
+                <span class="section-eyebrow">WELCOME TO SAI SP RESIDENCY</span>
+                <h2 class="section-title">A Comfortable Stay, Thoughtfully Presented.</h2>
+                <p class="section-paragraph">
+                    Sai SP Residency offers a comfortable and convenient stay for guests visiting Pollachi. The property provides a welcoming environment for travellers looking for a pleasant place to stay while exploring the city and surrounding attractions.
+                </p>
+                <p class="section-paragraph">
+                    Our spaces are designed with simple sophistication, keeping your convenience as our utmost priority. Enjoy premium service, pristine cleanliness, and a warm atmosphere from the moment you step into our residency.
+                </p>
+                <div class="about-action">
+                    <a href="#rooms" class="btn btn-outline">DISCOVER MORE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section class="rooms section-padding bg-warm" id="rooms">
+        <div class="container">
+            <div class="section-header text-center fade-up-init">
+                <span class="section-eyebrow">OUR ROOMS</span>
+                <h2 class="section-title">Rooms Designed for Your Comfort</h2>
+                <div class="header-divider"></div>
+            </div>
+            
+            <div class="rooms-grid">
+                <!-- Room Card 1 -->
+                <div class="room-card fade-up-init" data-delay="100" data-room-id="comfort">
+                    <div class="room-img-container">
+                        <img src="Images/sp-residency (1).jpg" alt="Comfort Room" class="room-img" loading="lazy">
+                        <div class="room-img-overlay"></div>
+                    </div>
+                    <div class="room-info">
+                        <h3 class="room-name">COMFORT ROOM</h3>
+                        <p class="room-desc">Ideal for solo travelers or couples seeking a well-equipped, cozy base with all modern conveniences.</p>
+                        <div class="room-chips">
+                            <span><i data-lucide="wind"></i> AC</span>
+                            <span><i data-lucide="wifi"></i> Free Wi-Fi</span>
+                            <span><i data-lucide="tv"></i> LED TV</span>
+                        </div>
+                        <button class="btn btn-text room-cta-btn">VIEW ROOM <i data-lucide="arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Room Card 2 -->
+                <div class="room-card fade-up-init" data-delay="200" data-room-id="deluxe">
+                    <div class="room-img-container">
+                        <img src="Images/sp-residency.jpg" alt="Deluxe Room" class="room-img" loading="lazy">
+                        <div class="room-img-overlay"></div>
+                    </div>
+                    <div class="room-info">
+                        <h3 class="room-name">DELUXE ROOM</h3>
+                        <p class="room-desc">Spacious room offering premium comfort, contemporary warm wood interiors, and excellent amenities.</p>
+                        <div class="room-chips">
+                            <span><i data-lucide="wind"></i> AC</span>
+                            <span><i data-lucide="wifi"></i> Free Wi-Fi</span>
+                            <span><i data-lucide="coffee"></i> Tea/Coffee Maker</span>
+                        </div>
+                        <button class="btn btn-text room-cta-btn">VIEW ROOM <i data-lucide="arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Room Card 3 -->
+                <div class="room-card fade-up-init" data-delay="300" data-room-id="family">
+                    <div class="room-img-container">
+                        <img src="Images/sp-residency-pollachi-pic-9.jpg" alt="Family Stay" class="room-img" loading="lazy">
+                        <div class="room-img-overlay"></div>
+                    </div>
+                    <div class="room-info">
+                        <h3 class="room-name">FAMILY STAY</h3>
+                        <p class="room-desc">Perfectly designed for families or larger groups, featuring generous layouts and comfortable bedding options.</p>
+                        <div class="room-chips">
+                            <span><i data-lucide="wind"></i> AC</span>
+                            <span><i data-lucide="wifi"></i> Free Wi-Fi</span>
+                            <span><i data-lucide="users"></i> Spacious Layout</span>
+                        </div>
+                        <button class="btn btn-text room-cta-btn">VIEW ROOM <i data-lucide="arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Room Details Modal -->
+    <div class="modal" id="roomModal" aria-hidden="true">
+        <div class="modal-overlay"></div>
+        <div class="modal-container">
+            <button class="modal-close" id="modalClose" aria-label="Close Modal"><i data-lucide="x"></i></button>
+            <div class="modal-content">
+                <div class="modal-img-wrapper">
+                    <img src="" alt="Room Detail Image" id="modalRoomImg">
+                </div>
+                <div class="modal-details">
+                    <h3 class="modal-title" id="modalRoomTitle">ROOM CATEGORY</h3>
+                    <div class="modal-tag">DEMO WEBSITE CONCEPT</div>
+                    <p class="modal-desc" id="modalRoomDesc">Room description goes here...</p>
+                    
+                    <h4 class="modal-subheading">Amentities & Comfort Features</h4>
+                    <ul class="modal-features-list" id="modalFeaturesList">
+                        <!-- Dynamically filled -->
+                    </ul>
+                    
+                    <div class="modal-actions">
+                        <a href="#booking" class="btn btn-primary" id="modalBookBtn">BOOK YOUR STAY</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Facilities Section -->
+    <section class="facilities section-padding" id="facilities">
+        <div class="container">
+            <div class="section-header text-center fade-up-init">
+                <span class="section-eyebrow">AMENITIES</span>
+                <h2 class="section-title">Everything You Need for a Comfortable Stay</h2>
+                <div class="header-divider"></div>
+            </div>
+            
+            <div class="facilities-grid">
+                <!-- Facility 1 -->
+                <div class="facility-card fade-up-init" data-delay="100">
+                    <div class="facility-icon"><i data-lucide="wind"></i></div>
+                    <h3>Air Conditioning</h3>
+                    <p>Individually controlled air conditioning units to keep your room custom climate-controlled.</p>
+                </div>
+                <!-- Facility 2 -->
+                <div class="facility-card fade-up-init" data-delay="150">
+                    <div class="facility-icon"><i data-lucide="wifi"></i></div>
+                    <h3>High-Speed Wi-Fi</h3>
+                    <p>Stay connected seamlessly with our high-speed, complimentary wireless network.</p>
+                </div>
+                <!-- Facility 3 -->
+                <div class="facility-card fade-up-init" data-delay="200">
+                    <div class="facility-icon"><i data-lucide="shield-check"></i></div>
+                    <h3>Comfortable Rooms</h3>
+                    <p>Clean, beautifully designed premium rooms created prioritizing guest convenience and relaxation.</p>
+                </div>
+                <!-- Facility 4 -->
+                <div class="facility-card fade-up-init" data-delay="250">
+                    <div class="facility-icon"><i data-lucide="car"></i></div>
+                    <h3>Secure Parking</h3>
+                    <p>Dedicated secure parking spaces on site for guests traveling in their own vehicles.</p>
+                </div>
+                <!-- Facility 5 -->
+                <div class="facility-card fade-up-init" data-delay="300">
+                    <div class="facility-icon"><i data-lucide="smile"></i></div>
+                    <h3>Reception Assistance</h3>
+                    <p>Warm hospitality and efficient assistance to resolve all your queries during your stay.</p>
+                </div>
+                <!-- Facility 6 -->
+                <div class="facility-card fade-up-init" data-delay="350">
+                    <div class="facility-icon"><i data-lucide="map-pin"></i></div>
+                    <h3>Convenient Location</h3>
+                    <p>Ideally situated in Pollachi, providing quick access to transit points and local attractions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us (Split Layout) -->
+    <section class="why-choose-us section-padding bg-charcoal text-white">
+        <div class="container grid-two-cols align-center">
+            <div class="why-content fade-up-init">
+                <span class="section-eyebrow text-gold">WHY SAI SP RESIDENCY</span>
+                <h2 class="section-title text-white">Made for a Comfortable Stay.</h2>
+                <p class="section-paragraph text-light-gray">
+                    We combine modern comfort with the natural, warm beauty of Tamil Nadu hospitality. Designed for business and leisure travelers alike.
+                </p>
+                
+                <div class="why-points-list">
+                    <div class="why-point-item">
+                        <div class="point-num">01</div>
+                        <div>
+                            <h4>Comfort First</h4>
+                            <p>Featuring plush bedding, immaculate premium wood interiors, and peaceful spaces.</p>
+                        </div>
+                    </div>
+                    <div class="why-point-item">
+                        <div class="point-num">02</div>
+                        <div>
+                            <h4>Utmost Convenience</h4>
+                            <p>Tailored amenities such as round-the-clock water, Wi-Fi, and quick assistance.</p>
+                        </div>
+                    </div>
+                    <div class="why-point-item">
+                        <div class="point-num">03</div>
+                        <div>
+                            <h4>Welcoming Atmosphere</h4>
+                            <p>Enjoy standard setting cleanliness and custom boutique hospitality.</p>
+                        </div>
+                    </div>
+                    <div class="why-point-item">
+                        <div class="point-num">04</div>
+                        <div>
+                            <h4>Accessible Location</h4>
+                            <p>Conveniently located near important scenic spots and commercial hubs in Pollachi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="why-image-wrapper reveal-slide-init" data-delay="200">
+                <img src="Images/sp-residency.jpg" alt="Sai SP Residency Building Side View" class="why-image" loading="lazy">
+                <div class="image-accent-border border-gold"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section (Masonry Grid) -->
+    <section class="gallery section-padding bg-warm" id="gallery">
+        <div class="container">
+            <div class="section-header text-center fade-up-init">
+                <span class="section-eyebrow">PORTFOLIO</span>
+                <h2 class="section-title">Residency Gallery</h2>
+                <div class="header-divider"></div>
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- Item 1 (Wide) -->
+                <div class="gallery-item item-wide fade-up-init" data-delay="100">
+                    <div class="gallery-img-wrapper">
+                        <img src="Images/sp-residency.jpg" alt="Sai SP Residency Building Exterior" class="gallery-img" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-icon"><i data-lucide="maximize-2"></i></span>
+                            <span class="gallery-label">Exterior View</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 (Tall) -->
+                <div class="gallery-item item-tall fade-up-init" data-delay="150">
+                    <div class="gallery-img-wrapper">
+                        <img src="Images/38823741.webp" alt="Residency Reception Counter" class="gallery-img" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-icon"><i data-lucide="maximize-2"></i></span>
+                            <span class="gallery-label">Reception & Lounge</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="gallery-item fade-up-init" data-delay="200">
+                    <div class="gallery-img-wrapper">
+                        <img src="Images/sp-residency (1).jpg" alt="Comfortable Room Interior" class="gallery-img" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-icon"><i data-lucide="maximize-2"></i></span>
+                            <span class="gallery-label">Premium Rooms</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="gallery-item fade-up-init" data-delay="250">
+                    <div class="gallery-img-wrapper">
+                        <img src="Images/images.jpg" alt="Residency Building Entrance" class="gallery-img" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-icon"><i data-lucide="maximize-2"></i></span>
+                            <span class="gallery-label">Front Entrance</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 5 (Wide) -->
+                <div class="gallery-item item-wide fade-up-init" data-delay="300">
+                    <div class="gallery-img-wrapper">
+                        <img src="Images/sp-residency-pollachi-pic-9.jpg" alt="Residency Corridor Interior" class="gallery-img" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-icon"><i data-lucide="maximize-2"></i></span>
+                            <span class="gallery-label">Polished Corridor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fullscreen Lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox"><i data-lucide="x"></i></button>
+        <button class="lightbox-btn lightbox-prev" id="lightboxPrev" aria-label="Previous Image"><i data-lucide="chevron-left"></i></button>
+        <button class="lightbox-btn lightbox-next" id="lightboxNext" aria-label="Next Image"><i data-lucide="chevron-right"></i></button>
+        
+        <div class="lightbox-content">
+            <img src="" alt="Lightbox View" id="lightboxImg">
+            <div class="lightbox-caption" id="lightboxCaption">Image Caption</div>
+            <div class="lightbox-counter" id="lightboxCounter">1 / 5</div>
+        </div>
+    </div>
+
+    <!-- Interior Experience (Editorial Parallax Section) -->
+    <section class="interior-experience">
+        <div class="parallax-bg-wrapper">
+            <img src="Images/sp-residency-pollachi-pic-9.jpg" alt="Polished Interior Corridor" class="parallax-bg-img" id="parallaxImg" loading="lazy">
+            <div class="parallax-overlay"></div>
+        </div>
+        <div class="interior-content text-center text-white">
+            <span class="section-eyebrow text-gold fade-up-init">INTERIOR EXPERIENCE</span>
+            <h2 class="section-title text-white fade-up-init">Simple. Comfortable. Welcoming.</h2>
+            <p class="section-paragraph fade-up-init" style="max-width: 600px; margin: 0 auto;">
+                Every corner is curated to provide visual cleanliness and calm architecture, giving you a serene sanctuary after a busy day of traveling.
+            </p>
+        </div>
+    </section>
+
+    <!-- Discover Pollachi Section -->
+    <section class="discover-pollachi section-padding">
+        <div class="container">
+            <div class="section-header text-center fade-up-init">
+                <span class="section-eyebrow">THE DESTINATION</span>
+                <h2 class="section-title">Stay Close to Pollachi</h2>
+                <div class="header-divider"></div>
+                <p class="section-paragraph text-center" style="max-width: 680px; margin: 0 auto;">
+                    Nestled in the lush, scenic landscapes of Tamil Nadu, Sai SP Residency serves as a highly convenient base for exploring Pollachi's rich heritage and natural wonders.
+                </p>
+            </div>
+            
+            <div class="discover-grid">
+                <!-- Nature -->
+                <div class="discover-card fade-up-init" data-delay="100">
+                    <div class="discover-card-num">01</div>
+                    <h3>NATURE</h3>
+                    <p>Explore gorgeous, mist-covered hills, beautiful tea gardens, cascading waterfalls, and spectacular wildlife reserves surrounding Pollachi.</p>
+                </div>
+                <!-- Experiences -->
+                <div class="discover-card fade-up-init" data-delay="200">
+                    <div class="discover-card-num">02</div>
+                    <h3>LOCAL EXPERIENCES</h3>
+                    <p>Immerse yourself in traditional village tours, organic agricultural farms, and famous historical temples nearby.</p>
+                </div>
+                <!-- Connectivity -->
+                <div class="discover-card fade-up-init" data-delay="300">
+                    <div class="discover-card-num">03</div>
+                    <h3>POLLACHI</h3>
+                    <p>Conveniently located near essential transport links and premium commercial facilities in the heart of town.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Guest Experience -->
+    <section class="testimonials section-padding bg-charcoal text-white" id="reviews">
+        <div class="container">
+            <div class="section-header text-center fade-up-init">
+                <span class="section-eyebrow text-gold">GUEST EXPERIENCE — DEMO</span>
+                <h2 class="section-title text-white">What Our Demo Visitors Say</h2>
+                <div class="header-divider border-gold"></div>
+            </div>
+            
+            <div class="testimonials-slider-container fade-up-init" data-delay="200">
+                <div class="testimonials-slider" id="testimonialSlider">
+                    <!-- Card 1 -->
+                    <div class="testimonial-card active">
+                        <div class="quote-icon"><i data-lucide="quote"></i></div>
+                        <p class="testimonial-text">
+                            "A highly pleasant experience. The rooms were spotless, beautifully styled with warm wood accents, and the staff was extremely accommodating. Located right at the heart of Pollachi!"
+                        </p>
+                        <div class="testimonial-author">
+                            <span class="author-name">Rohan Sharma</span>
+                            <span class="author-role">Demo Guest</span>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i data-lucide="quote"></i></div>
+                        <p class="testimonial-text">
+                            "Clean corridors, fast Wi-Fi, and top-tier hospitality. The pricing concept is incredibly fair, and it functions as a perfect sanctuary. Highly recommended for couples."
+                        </p>
+                        <div class="testimonial-author">
+                            <span class="author-name">Priyah Sundar</span>
+                            <span class="author-role">Demo Guest</span>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i data-lucide="quote"></i></div>
+                        <p class="testimonial-text">
+                            "Extremely convenient location with secure parking facilities. Check-in was smooth, and standard facilities like AC were in peak working condition. Will visit again!"
+                        </p>
+                        <div class="testimonial-author">
+                            <span class="author-name">Anand Krishnan</span>
+                            <span class="author-role">Demo Guest</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slider Controls -->
+                <div class="slider-controls">
+                    <button class="slider-btn slider-prev" id="sliderPrev" aria-label="Previous Review"><i data-lucide="chevron-left"></i></button>
+                    <div class="slider-dots" id="sliderDots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                    </div>
+                    <button class="slider-btn slider-next" id="sliderNext" aria-label="Next Review"><i data-lucide="chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map -->
+    <section class="contact section-padding" id="contact">
+        <div class="container grid-two-cols align-center">
+            <div class="contact-info-wrapper fade-up-init">
+                <span class="section-eyebrow">PLAN YOUR STAY</span>
+                <h2 class="section-title">Reach Out to Us</h2>
+                <p class="section-paragraph">
+                    We look forward to hosting you at Sai SP Residency. Get in touch with us to inquire about availability, packages, or details for your upcoming stay in Pollachi.
+                </p>
+                
+                <div class="contact-details">
+                    <div class="contact-detail-item">
+                        <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+                        <div>
+                            <h4>Address</h4>
+                            <p>SAI SP RESIDENCY, Pollachi, Tamil Nadu, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail-item">
+                        <div class="contact-icon"><i data-lucide="phone"></i></div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>[Phone Number Placeholder]</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail-item">
+                        <div class="contact-icon"><i data-lucide="mail"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>[Email Address Placeholder]</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-actions">
+                    <a href="tel:#" class="btn btn-primary"><i data-lucide="phone-call"></i> CALL NOW</a>
+                    <a href="https://wa.me/#" target="_blank" rel="noopener" class="btn btn-success"><i data-lucide="message-square"></i> WHATSAPP</a>
+                    <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-outline"><i data-lucide="navigation"></i> GET DIRECTIONS</a>
+                </div>
+            </div>
+            
+            <div class="contact-map-wrapper reveal-slide-init" data-delay="200">
+                <!-- Premium Custom Map Placeholder -->
+                <div class="map-placeholder">
+                    <div class="map-art">
+                        <div class="map-circle ripple"></div>
+                        <div class="map-pin-marker"><i data-lucide="map-pin"></i></div>
+                    </div>
+                    <div class="map-card">
+                        <h4>SAI SP RESIDENCY</h4>
+                        <p>Pollachi, Tamil Nadu</p>
+                        <a href="https://maps.google.com" target="_blank" rel="noopener" class="map-link">Open in Google Maps <i data-lucide="external-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Cinematic CTA -->
+    <section class="final-cta">
+        <div class="final-cta-bg">
+            <img src="Images/sp-residency.jpg" alt="Sai SP Residency Exterior Backdrop" class="final-cta-img" loading="lazy">
+            <div class="final-cta-overlay"></div>
+        </div>
+        <div class="final-cta-content text-center text-white">
+            <h2 class="fade-up-init">Your Stay in Pollachi Starts Here.</h2>
+            <p class="fade-up-init" data-delay="100">Discover a comfortable and convenient stay at Sai SP Residency.</p>
+            <div class="fade-up-init" data-delay="200">
+                <a href="#booking" class="btn btn-accent btn-large">BOOK YOUR STAY NOW</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#home" class="logo text-white">
+                    <span class="logo-main">SAI SP</span>
+                    <span class="logo-sub">RESIDENCY</span>
+                </a>
+                <p class="footer-desc">
+                    Experience unmatched comfort and convenience during your stay in Pollachi, Tamil Nadu.
+                </p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#rooms">Our Rooms</a></li>
+                    <li><a href="#facilities">Facilities</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#reviews">Guest Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-legal">
+                <h4>LEGAL</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+                <div class="footer-concept-badge">
+                    <span>Website Concept</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom text-center">
+            <div class="container">
+                <p>&copy; 2026 Sai SP Residency. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top"><i data-lucide="arrow-up"></i></button>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Main JavaScript File -->
+    <script src="js/script.js"></script>
+</body>
+</html>
